@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+<style>
+ @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+h1 {
+  font-size: calc(20px + 8vh);
+  line-height: calc(20px + 2vh);
+/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+body {
+  padding: 2vw;
+  display: flex;
+  
+  align-items: center;
+  height: 25vh;
+  background: #222;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 7px,
+    rgba(0, 0, 0, 0.8) 9px,
+    rgba(0, 0, 0, 0.8) 13px,
+    transparent 13px
+  );
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+#pp{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 7px;
+    background: lightblue;
+  border: 1px solid lightblue;
+}
+#us{
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%);
+  color: lightgreen;
+  font-family: "Sacramento";
+ padding-left: 5px;
+ font-weight: 800;
+}
+#ps{
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 7px;
+  background: lightblue;
+  border: 1px solid lightblue;
+  
+}
+#en{
+  
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+  padding-left: 15px;
+  padding-right:15px;
+  background: lightgreen;
+  border: 1px solid lightgreen;
+  
+}
+
+</style>
+<h1 id="op">Login here</h1>
+
+<input type="text" id="pp" placeholder="Enter Username">
+<input type="text" id="ps" placeholder="Enter Password ">
+<button type="submit" id="en">Enter</button>
+<script>
+  document.getElementById('en').onclick = e=>{
+    let x = document.getElementById('pp')
+    let y = document.getElementById('ps')
+    if(pp.value == 'Myg' && ps.value == 'yasir'){
+     window.open('hs.html')
+    }
+    else{
+      alert('Wrong Password !!')
+    }
+  }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+<style>
+  html,
+body {
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.glow-on-hover {
+    width: 250px;
+    height: 60px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 300%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 19px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    75%{background-position:800% 0;}
+    100% { background-position: 0 0; }
+}
+
+#op{
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%);
+}
+#oa{
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%);
+}
+#ch{
+  position: absolute;
+  top: 8%;
+  left: 90%;
+  transform: translate(-50%);
+  padding: 30px;
+}
+#ch1{
+position: absolute;
+  top: 18%;
+  left: 90%;
+  transform: translate(-50%);
+  padding: 30px;
+}
+h2{
+  
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%);
+  
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  
+  
+}
+#yt{
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 30px;
+}
+#he{
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+}
+#app{
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 8px;
+}
+#an{
+  position: absolute;
+  top: 41%;
+  left: 34%;
+  transform: translate(-50%);
+  padding: 8px;
+}
+#ani{
+  position: absolute;
+  top: 42%;
+  left: 60%;
+  transform: translate(-50%);
+  padding: 8px;
+}
+</style>
+<button class="glow-on-hover" type="button" id="op"> Auto Headshot✔️</button>
+
+<input type="checkbox" name="" id="ch" />
+<button class="glow-on-hover" type="button" id="oa"> Aimbot✔️</button>
+<input type="checkbox" name="" id="ch1" />
+<h2>Sensitivity</h2>
+<input type="range" id="yt">
+<input type="text" name="" id="he" placeholder="Enter Headshot Rate">
+<button type="submit" id="app">Apply</button>
+<button type="submit" id="an">Esp & Antena </button>
+<input type="checkbox" name="" id="ani" />
+</body>
+<script>
+  document.getElementById('op').onclick = function po(){
+    alert('done✅ ')
+  }
+  document.getElementById('oa').onclick = function po(){
+    alert('done✅ ')
+  }
+  document.getElementById('app').onclick = function po(){
+    alert('applied successfully ✅ ')
+  }
+  document.getElementById('an').onclick = function po(){
+    alert('done✅ ')
+  }
+</script>
+</html>
